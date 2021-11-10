@@ -15,7 +15,7 @@ RSpec.describe Vehicle do
   end
 
   it 'has attributes' do
-    expect(@vehicle.year).to eq(2001)
+    expect(@vehicle.year).to eq("2001")
     expect(@vehicle.make).to eq("Honda")
     expect(@vehicle.model).to eq("Civic")
   end
@@ -33,3 +33,4 @@ RSpec.describe Vehicle do
     expect(@vehicle.passengers).to eq([@charlie, @jude, @taylor])
     expect(@vehicle.num_adults).to eq(2)
   end
+end

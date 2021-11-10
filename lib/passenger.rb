@@ -17,10 +17,10 @@ class Passenger
   end
 
   def driver?
-    if @driver == nil
-      false
-    else
+    if @driver == true
       true
+    else
+      false
     end
   end
 

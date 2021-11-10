@@ -5,6 +5,7 @@ class Passenger
   def initialize(passenger_info)
     @name = passenger_info["name"]
     @age = passenger_info["age"]
+    @driver = nil
   end
 
   def adult?
@@ -16,11 +17,15 @@ class Passenger
   end
 
   def driver?
-    skip
+    if @driver == nil
+      false
+    else
+      true
+    end
   end
 
-  def driver
-    skip
+  def drive
+    @driver = true
   end
 
 end
